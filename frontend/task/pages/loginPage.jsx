@@ -19,7 +19,7 @@ const LoginPage = () => {
         }
       );
       localStorage.setItem("token", response.data.token);
-      navigate("/home");
+      navigate("/");
     } catch (error) {
       setError(error.response?.data?.message || "Login failed");
     }
